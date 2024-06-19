@@ -8,7 +8,7 @@ import Products from './components/Shop/Products';
 
 function App() {
   const showCart = useSelector((state) => state.ui.cartIsVisible);
-  const cart = useSelector((state) => state.carts);
+  const cart = useSelector((state) => state.cart);
 
   useEffect(() => {
     fetch('https://redux-73e55-default-rtdb.firebaseio.com/cart.json', {
